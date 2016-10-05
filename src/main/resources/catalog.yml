@@ -8,25 +8,25 @@ services:
   plans:
   - id: b
     name: free
-    description: free plan
+    description: free unlimited plan
     metadata:
       costs:
       - amount:
           usd: 0
         unit: MONTHLY
       bullets:
-      - fake
-      - foo
-      - bar
+      - Free
+      - Unlimited
     free: true
   tags:
-  - tag A
-  - tag B
-  - tag C
+  - mysql
+  - relational
   metadata:
-    longDescription: MySQL Service
+    longDescription: Provisioning a service instance creates a MySQL database. Binding applications to the instance creates unique credentials for each application to access the database.
     providerDisplayName: "@making"
     displayName: MySQL
-    imageUrl: https://www.cloudfoundry.org/wp-content/uploads/2015/10/CF_rabbit_Blacksmith_rgb_trans_back-269x300.png
+    imageUrl: http://mysql.com/common/logos/mysql-logo.svg
+    documentationUrl: https://github.com/making/mysql-service-broker
+    supportUrl: https://github.com/making/mysql-service-broker
   requires: []
   dashboard_client:
