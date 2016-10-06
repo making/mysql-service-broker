@@ -41,7 +41,7 @@ public class MysqlServiceInstanceBindingService implements ServiceInstanceBindin
 		credentials.put("username", username);
 		credentials.put("password", password);
 		credentials.put("port", uri.getPort());
-		credentials.put("hostname", "localhost");
+		credentials.put("hostname", uri.getHost());
 		credentials.put("jdbcUrl",
 				"jdbc:mysql://" + uri.getHost() + ":" + uri.getPort() + "/" + database);
 		credentials.put("uri",
